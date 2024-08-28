@@ -1,0 +1,396 @@
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #000000;
+    padding: 30px;
+    padding-left: 40px;
+
+}
+
+.search-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.top-bar .search,
+.top-bar .saved,
+.top-bar .login {
+    display: inline-block;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.search-input {
+    padding: 10px;
+    font-size: 16px;
+    width: 500px;
+}
+
+.navbar {
+    background-color: #000000;
+    text-align: center;
+    width: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    z-index: 999;
+}
+
+.navbar a {
+    display: inline-block;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.login-box {
+    display: flex;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 800px;
+    width: 100%;
+    padding: 100px;
+}
+
+.login-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.login-form {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    color: #333333;
+    font-family: Roboto, helvetica neue, Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+}
+
+.login-form label {
+    margin-bottom: 5px;
+    color: #555555;
+    font-family: Roboto, helvetica neue, Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+}
+
+.login-form input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    width: 100%;
+    font-family: Roboto, helvetica neue, Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+}
+
+.login-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Roboto, helvetica neue, Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+}
+
+.login-form button:hover {
+    background-color: #0056b3;
+    font-family: Roboto, helvetica neue, Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+}
+
+.login-form p {
+    margin-top: 20px;
+    text-align: center;
+    font-family: Roboto, helvetica neue, Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+}
+
+.login-form a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-form a:hover {
+    text-decoration: underline;
+}
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.register-box {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.register-box h2 {
+    margin-bottom: 20px;
+    color: #333333;
+    text-align: center;
+}
+
+.register-box label {
+    margin-bottom: 5px;
+    color: #555555;
+}
+
+.register-box input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.register-box button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.register-box button:hover {
+    background-color: #0056b3;
+}
+
+.register-box p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.register-box a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register-box a:hover {
+    text-decoration: underline;
+}
+
+.saved-product {
+    display: flex;
+    justify-content: center; /* Centra las columnas horizontalmente */
+    gap: 100px;
+    padding-top: 100px; /* Espacio entre columnas */
+}
+
+.column {
+    width: 240px; /* Ancho fijo para la columna */
+    height: 450px; /* Altura fija para la columna */
+    margin-right: 10px; /* Espacio entre columnas */
+    overflow: hidden; /* Para evitar que las imágenes se desborden */
+}
+
+.column:last-child {
+    margin-right: 0; /* Eliminar el margen derecho de la última columna */
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+.column img:hover {
+    transform: scale(1.1); /* Agranda la imagen al 110% del tamaño original */
+}
+
+
+
+.footer {
+    background-color: #252525;
+    color: #fff;
+    padding-top: 80px;
+    padding-left: 50px;
+    text-align: left;
+    width: 0 auto;
+    margin: 0 auto;
+    border-top: 4px solid var(--color-griss);
+    font-family: Roboto, helvetica neue, Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+}
+
+.footer .text-footer {
+    font-weight: bold;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .social-icons a {
+    margin-right: 1px;
+    font-size: 24px;
+}
+
+.footer p {
+    margin: 0;
+    padding-top: 10px;
+}
+
+.footer .text-center p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer .text-center p a:hover {
+    text-decoration: underline;
+}
+
+.footer h5 {
+    margin-bottom: 15px;
+}
+
+.footer .list-unstyled li {
+    margin-bottom: 10px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .container {
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer .footer-column {
+    flex-grow: 1;
+}
+
+.footer .row.mt-3 {
+    display: flex;
+    justify-content: center;
+    padding-top: 14px;
+    padding-bottom: 28px;
+}
+
+.footer .col-sm-6 {
+    flex: 1;
+    min-width: 50px;
+    margin: px;
+}
+/* Estilo para la tabla de productos guardados */
+#savedProductsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    font-family:sans-serif;
+}
+
+#savedProductsTable th, #savedProductsTable td {
+    padding: 8px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+#savedProductsTable th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+#savedProductsTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#savedProductsTable tr:hover {
+    background-color: #e2e2e2;
+}
+
+#savedProductsTable img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 4px;
+    font-family:sans-serif;
+}
+/* Estilo para el contenedor del título de productos guardados */
+.title-saved {
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px auto;
+    max-width: 600px;
+    font-family:sans-serif;
+}
+
+.title-saved p {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+    font-weight: bold; 
+}
